@@ -1,3 +1,3 @@
 # nannakaroliina.github.io
 
-This is my portfolio site, which is still in progress but has a good base already.
+My portfolio which contains photography, drawing, Photoshop examples. There is little more information about me and my contact information. Last part is containing lists of my main skills.
