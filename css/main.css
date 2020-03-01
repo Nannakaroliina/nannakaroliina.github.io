@@ -292,11 +292,12 @@ a:hover {
 	}
 
 	#homePreview .start-info .display-1{
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 
 	.sub-title {
-		font-size: 0.75rem;
+		font-size: 1rem;
+		line-height: 0.5;
 	}
 
 	.social-media {
@@ -336,11 +337,13 @@ a:hover {
 	}
 
 	#homePreview .start-info .display-1 {
-		font-size: 1rem;
+		font-size: 1.5rem;
+		line-height: 0.5;
 	}
 
 	.sub-title {
-		font-size: 0.5rem;
+		font-size: 0.75rem;
+		list-style: 0.25;
 	}
 
 	.social-media {
@@ -368,7 +371,7 @@ a:hover {
     .display-4 {
         font-size: 1.75rem;
         font-weight: 300;
-        line-height: 1.0;
+        line-height: 0.5;
     }
 }
 
@@ -380,11 +383,13 @@ a:hover {
 	}
 
 	#homePreview .start-info .display-1{
-		font-size: 0.75rem;
+		font-size: 1rem;
+		list-style: 0.5;
 	}
 
 	.sub-title {
-		font-size: 0.5rem;
+		font-size: 0.75rem;
+		line-height: 0.25;
 	}
 
 	.social-media {
