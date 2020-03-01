@@ -247,7 +247,8 @@ a:hover {
         line-height: 1.0;
     }
 }
-@media (max-width: 767.98px) {
+
+@media (min-width: 414px) and (max-width: 767.98px) {
 
 	#homePreview {
 		top: 1rem;
@@ -258,45 +259,7 @@ a:hover {
 	}
 
 	.sub-title {
-		font-size: 1rem;
-	}
-	
-	.display-1 {
-		font-size: 5rem;
-		font-weight: 300;
-		line-height: 1.0;
-	}
-
-    .display-2 {
-        font-size: 3.5rem;
-        font-weight: 300;
-        line-height: 1.0;
-    }
-
-    .display-3 {
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 1.0;
-    }
-
-    .display-4 {
-        font-size: 2rem;
-        font-weight: 300;
-        line-height: 1.0;
-    }
-}
-@media (min-width: 414px) and (max-width: 736px) {
-
-	#homePreview {
-		top: 1rem;
-	}
-
-	#homePreview .start-info .display-1{
-		font-size: 2rem;
-	}
-
-	.sub-title {
-		font-size: 1rem;
+		font-size: 1.25rem;
 		line-height: 0.5;
 	}
 
