@@ -8,41 +8,15 @@
 
 		<!-- Bootstrap, Photoswipe, jQuery & Popper -->
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-		<link href="css/mainStyle.css" rel="stylesheet" type="text/css">
-		
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.js"></script>
-
-		<script>
-			
-		/*$(function() {
-			
-			if ( $(window).width() > 739) {
-				$('#intro, #content, #footer').hide();
-
-				$(window).scroll(function(scrollit) {
-
-				var scroll = $(window).scrollTop();
-
-				if (scroll >= 120) {
-
-					$('#intro, #content').show(3000);
-
-				}
-				if (scroll >= 800) {
-
-					$('#footer').show(3000);
-
-				}
-					
-				});	
-			} else {
-				$('#intro, #content, #footer').show();
-			}
-				
-		})*/
-		</script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		
 	</head>
 	
 	<body>
@@ -53,11 +27,11 @@
 				<a class="navbar-brand" href="home.html">
 					<img src="images/LOGO - valkoinen.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigointi" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 						
-				<div class="collapse navbar-collapse" id="navigointi">
+				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<a class="nav-link active" href="home.html">Home</a>
@@ -71,11 +45,11 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    <!-- TODO project site for portfolio -->
+                    <!-- TODO project site for portfolio 
 					<li class="nav-item">
 						<a class="nav-link" href="#">Projects</a>
 					</li>
-					
+					-->
 					</ul>
 				</div>
 				</div>
@@ -85,7 +59,7 @@
 				<div class="start-info position-absolute text-white text-center">
 					<h1 class="display-1 heading-name">NANNA SETÄMAA</h1>
 					<hr class="w-50 border-white">
-					<h2>Software Developer</h2>
+					<h2 class="sub-title">Software Engineer</h2>
 				</div>
 				<div class="social-media position-absolute">
 					<a class="p-2" href="https://github.com/Nannakaroliina"><img src="images/icons/GitHub-Mark-Light-64px.png" alt="Facebook" height="40"></a>	
@@ -95,225 +69,92 @@
 				<img class="img-fluid" src="images/Background_test.png" alt="Cover images">
 			</div>
 
-            <!-- This is gallery section -->
-            <!-- TODO gallery JavaScript functionality to show pictures in bigger scale -->
 
-			<div class="container-fluid mb-3 p-4 bg-white" id="gallery">
+			<!-- GALLERY SECTION -->
+
+			<div class="container-fluid mb-3 p-4 bg-white gallery" id="gallery">
 				<div class="row mt-5 mb-5 ">
 					<div class="col-md-4">
-							<figure class="figure">
-									<img src="images/Glitch_effect3.png" class="figure-img img-fluid m-0" alt="Glitch photoshop">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal1"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photoshop: Glitch effect</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Glitch_effect3.png" class="img-fluid m-0 mw-100" alt="Glitch photoshop">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/Figure.jpg" class="figure-img img-fluid m-0" alt="Profile picture photoshop">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal2"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photoshop: Profile picture</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Figure.jpg" class="img-fluid m-0 mw-100" alt="Figure">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/Fish.jpg" class="figure-img img-fluid m-0" alt="Fishing">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal3"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photography: Catching fish</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Fish.jpg" class="img-fluid m-0 mw-100" alt="Fish">
-									</div>
-									</div>
-								</div>
-							</div>
+						<figure class="figure">
+							<a href="images/Glitch_effect3.png" title="Glitch effect with Photoshop">
+								<img src="images/Glitch_effect3.png" class="figure-img img-fluid m-0" alt="Glitch photoshop">
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/Figure.jpg" title="Portrait effect with Photoshop">
+								<img src="images/Figure.jpg" class="figure-img img-fluid m-0" alt="Profile picture photoshop">
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/Lady_with_rose.jpg" title="Lady with a rose digital drawing">
+								<img src="images/Lady_with_rose.jpg" class="figure-img img-fluid m-0" alt="Lady with a rose" >
+							</a>
+						</figure>
 					</div>
 					<div class="col-md-4">
-							<figure class="figure">
-									<img src="images/Cut.png" class="figure-img img-fluid m-0" alt="Cutted in pieces photoshop">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal4"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photoshop: Sliced portrait</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Cut.png" class="img-fluid m-0 mw-100" alt="Sliced portrait">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/Niko_dust.jpg" class="figure-img img-fluid m-0" alt="Dust photoshop">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal5"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photoshop: Dust effect</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Niko_dust.jpg" class="img-fluid m-0 mw-100" alt="Dust effect">
-									</div>
-									</div>
-								</div>
-							</div>
+						<figure class="figure">
+							<a href="images/Cut.png" title="Cutted in pieces portrait effect with Photoshop">
+								<img src="images/Cut.png" class="figure-img img-fluid m-0" alt="Cutted in pieces" >
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/Niko_dust.jpg" title="Becoming dust portrait effect with photoshop">
+								<img src="images/Niko_dust.jpg" class="figure-img img-fluid m-0" alt="Dust photoshop" >
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/Fish.jpg" title="Catching a fish photo">
+								<img src="images/Fish.jpg" class="figure-img img-fluid m-0" alt="Fishing" >
+							</a>
+						</figure>
 					</div>
 					<div class="col-md-4">
-							<figure class="figure">
-									<img src="images/Winder-wonderland.jpg" class="figure-img img-fluid m-0" alt="Winter photoshop">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal6"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photography: Winter wonderland</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Winder-wonderland.jpg" class="img-fluid m-0 mw-100" alt="Winter wonderland">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/Winter.png" class="figure-img img-fluid m-0" alt="Sunrise">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal7"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal7" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photography: Sunrise</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/Winter.png" class="img-fluid m-0 mw-100" alt="Winter sunrise">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/gallery6.jpg" class="figure-img img-fluid m-0" alt="Ruka">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal8"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal8" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photography: Ruka ski center</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/gallery6.jpg" class="img-fluid m-0 mw-100" alt="Ruka ski center">
-									</div>
-									</div>
-								</div>
-							</div>
-							<figure class="figure">
-									<img src="images/gallery4.jpg" class="figure-img img-fluid m-0" alt="Kitka lake">
-									<div class="hover-effect">
-										<button type="button" class="btn btn-invisible" data-toggle="modal" data-target="#imageModal9"><img src="images/icons/search2.png" alt="search" height="30"></button>
-									</div>
-							</figure>
-							<div class="modal fade" id="imageModal9" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered modal-xl">
-									<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="imageModalLabel">Photography: Lake view</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<img src="images/gallery4.jpg" class="img-fluid m-0 mw-100" alt="Lake view">
-									</div>
-									</div>
-								</div>
-							</div>
+						<figure class="figure">
+							<a href="images/Winder-wonderland.jpg" title="Winter portrait effect with Photoshop">
+								<img src="images/Winder-wonderland.jpg" class="figure-img img-fluid m-0" alt="Winter photoshop">
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/Winter.png" title="Sunrise landscape photo">
+								<img src="images/Winter.png" class="figure-img img-fluid m-0" alt="Sunrise" >
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/gallery6.jpg" title="Sundown at ski center Ruka, Kuusamo, FI">
+								<img src="images/gallery6.jpg" class="figure-img img-fluid m-0" alt="Ruka" >
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/gallery4.jpg" title="Lake view from Kitka, Kuusamo, FI">
+								<img src="images/gallery4.jpg" class="figure-img img-fluid m-0" alt="Kitka lake" >
+							</a>
+						</figure>
+						<figure class="figure">
+							<a href="images/3droom.jpg" title="3D room made with Blender">
+								<img src="images/3droom.jpg" class="figure-img img-fluid m-0" alt="3D room" >
+							</a>
+						</figure>
 					</div>
 				</div>
 			</div>
 
-			<!-- This is about section -->
+
+			<!-- ABOUT SECTION -->
 
 			<div class="container-fluid" id="about">
 				<div class="row">
 					<div class="col-md-6 p-4 bg-about text-center">
 						<h1 class="display-4 pt-5">Who am I</h1>
-						<div class="p-5 text-justify">
-							<p>Software Development student based in Finland. I own a varied type of work experience and I have a diverse set of skills.</p>
-							<p>I have spent a couple of years in theatre working as an audio technician or stage technician. At beginning of 2017, I thought about expanding my proficiency and started studying Business Information Technology at Haaga-Helia University Of Applied Sciences.</p>
-							<p>Currently I am doing side projects while studying like web applications, wed design, visual design and drawings.</p>
+						<div class="p-2 text-justify">
+							<p>Software Engineer working at Alfresco Software Inc. and based in Lontoo, UK. I own a varied type of work experience and I have a diverse set of skills.</p>
+							<p>I have spent a couple of years in theatre working as an audio- or stage technician. At beginning of 2017, I thought about expanding my proficiency and started studying Business Information Technology at Haaga-Helia University Of Applied Sciences. Autumn 2019 I completed a part of my studies in Seoul National University of Science and Technology. After that I found my way to London where I am currently working and finishing my degree.</p>
+							<p>On my free time I like spend time in nature, read books, workout and work with different kind of projects. Little mobile apps, web design, photo- and videography and drawings. Also, I do some volunteering job for Finnish Church of London on my free time.</p>
 						</div>
 						<h3 class="p-3">Contact</h3>
 						<hr class="w-50">
 						<div class="list-group">
-							<li class="list-group-item"><p class="font-weight-bold m-0">Email: </p><a class="contact-mail" href="mailto:nanna.karoliina@outlook.com">nanna.karoliina@outlook.com</a></li>
-							<li class="list-group-item"><p class="font-weight-bold m-0">Mobile: </p> +358 45 600 7774</li>
+							<li class="list-group-item"><p class="font-weight-bold m-0">Email: </p><a class="contact-link" href="mailto:nanna.karoliina@outlook.com">nanna.karoliina@outlook.com</a></li>
+							<li class="list-group-item"><p class="font-weight-bold m-0">Mobile: </p><a class="contact-link" href="tel:+447549791344"> +44 7549 791344</a></li>
 						</div>
 						<br>
 						<div class="contact-icons p-3">
@@ -330,7 +171,8 @@
 				</div>
 			</div>
 			
-			<!-- Skills section -->
+
+			<!-- SKILLS SECTION -->
 
 			<div class="container-fluid mt-3 bg-white" id="skills">
 				<h1 class="display-4 text-center p-5">Skills</h1>
@@ -352,9 +194,6 @@
 								jQuery <span class="badge badge-progress">New</span>
 							</li>
 							<li class="list-group-item">
-								React.js <span class="badge badge-progress">New</span>
-							</li>
-							<li class="list-group-item">
 								Bootstrap & Semantic
 							</li>
 						</div>
@@ -364,10 +203,13 @@
 						<h4 class="pt-3">Back-end Development</h4>
 						<div class="list-group">
 							<li class="list-group-item">
-								Java + Kotlin
+								Java
 							</li>
 							<li class="list-group-item">
 								C++
+							</li>
+							<li class="list-group-item">
+								Kotlin
 							</li>
 							<li class="list-group-item">
 								Python <span class="badge badge-progress">New</span>
@@ -404,7 +246,10 @@
                             </li>
                             <li class="list-group-item">
                                 Pencil and digital drawing
-                            </li>
+							</li>
+							<li class="list-group-item">
+                                Sound design
+							</li>
 						</div>
 					</div>
 					<div class="col-md m-4 p-3 text-center border">
@@ -412,16 +257,16 @@
 						<h4 class="pt-3">Languages</h4>
 						<div class="list-group">
 							<li class="list-group-item">
-								Finnish
+								Finnish - Native
 							</li>
 							<li class="list-group-item">
-								English
+								English - Proficiency
 							</li>
 							<li class="list-group-item">
-								Japanese <span class="badge badge-progress">New</span>
+								Japanese - Elementary <span class="badge badge-progress">New</span>
 							</li>
 							<li class="list-group-item">
-								Swedish
+								Swedish - Elementary
 							</li>
 						</div>
 					</div>
@@ -434,6 +279,35 @@
 				</div>
 			</div>
 		</div>
+
+		<script>
+			$(document).ready(function() {
+				$('.gallery').magnificPopup({
+					delegate: 'a',
+					type: 'image',
+					closeOnContentClick: false,
+					closeBtnInside: false,
+					mainClass: 'mfp-with-zoom mfp-img-mobile',
+					image: {
+						verticalFit: true,
+						titleSrc: function(item) {
+							return item.el.attr('title');
+						}
+					},
+					gallery: {
+						enabled: true
+					},
+					zoom: {
+						enabled: true,
+						duration: 300, // don't foget to change the duration also in CSS
+						opener: function(element) {
+							return element.find('img');
+						}
+					}
+					
+				});
+			});
+		</script>
 	</body>
 </html>
 
