@@ -14,6 +14,9 @@
 	];
 
 	let viewing = $state(null);
+
+	// 720px-wide JPEG copies in static/images/thumbs/ for the grid; the lightbox uses the originals.
+	const thumbSrc = (g) => '/images/thumbs/' + g.src.replace(/\.\w+$/, '.jpg');
 	const year = new Date().getFullYear();
 </script>
 
@@ -150,7 +153,13 @@
 			<div class="gallery">
 				{#each gallery as g, i (g.src)}
 					<button class="thumb" onclick={() => (viewing = i)} aria-label="Open {g.title}">
-						<img src={'/images/' + g.src} alt={g.alt} width={g.w} height={g.h} loading="lazy" />
+						<img
+							src={thumbSrc(g)}
+							alt={g.alt}
+							width={g.w}
+							height={g.h}
+							loading="lazy"
+						/>
 						<span>{g.title}</span>
 					</button>
 				{/each}
