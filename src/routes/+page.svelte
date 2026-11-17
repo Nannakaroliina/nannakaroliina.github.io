@@ -150,7 +150,7 @@
 			<div class="gallery">
 				{#each gallery as g, i (g.src)}
 					<button class="thumb" onclick={() => (viewing = i)} aria-label="Open {g.title}">
-						<img src={'/images/' + g.src} alt={g.alt} loading="lazy" />
+						<img src={'/images/' + g.src} alt={g.alt} width={g.w} height={g.h} loading="lazy" />
 						<span>{g.title}</span>
 					</button>
 				{/each}
@@ -210,6 +210,12 @@
 	}
 
 	/* Hero */
+	.hero,
+	.about,
+	.creative,
+	.contact {
+		--focus: var(--rose);
+	}
 	.hero {
 		position: relative;
 		min-height: max(520px, min(100svh, 56.25vw));
@@ -341,8 +347,10 @@
 	.when {
 		margin: 0;
 		font-size: 0.85rem;
-		color: var(--mauve);
-		letter-spacing: 0.02em;
+		font-weight: 600;
+		color: var(--slate);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
 	}
 	.timeline h3 {
 		margin: 2px 0 4px;
@@ -425,7 +433,8 @@
 		flex-direction: column;
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
-	.project:hover {
+	.project:hover,
+	.project:focus-visible {
 		transform: translateY(-3px);
 		box-shadow: 0 12px 28px rgba(34, 34, 59, 0.12);
 	}
@@ -472,6 +481,7 @@
 	}
 	.thumb img {
 		width: 100%;
+		height: auto;
 		transition: transform 0.4s ease;
 	}
 	.thumb span {

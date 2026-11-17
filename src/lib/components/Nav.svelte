@@ -2,6 +2,11 @@
 	let { sections } = $props();
 	let open = $state(false);
 	let scrolled = $state(false);
+
+	// The page may load already scrolled (e.g. /#projects), before any scroll event fires.
+	$effect(() => {
+		scrolled = window.scrollY > 40;
+	});
 </script>
 
 <svelte:window onscroll={() => (scrolled = window.scrollY > 40)} />
@@ -30,6 +35,7 @@
 
 <style>
 	header {
+		--focus: var(--rose); /* the header is always on a dark background */
 		position: fixed;
 		inset: 0 0 auto 0;
 		z-index: 20;

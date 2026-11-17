@@ -53,8 +53,9 @@
 		color: inherit;
 	}
 
+	/* Slate ring reads on light backgrounds; dark sections switch --focus to rose. */
 	:global(:focus-visible) {
-		outline: 3px solid var(--rose);
+		outline: 3px solid var(--focus, var(--slate));
 		outline-offset: 3px;
 	}
 

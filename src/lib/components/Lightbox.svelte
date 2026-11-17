@@ -10,6 +10,11 @@
 		if (index === null && dialog.open) dialog.close();
 	});
 
+	// Close on a click in the empty area around the image, but only when the press
+	// also started there (so selecting caption text never closes the viewer).
+	let pressedOutside = false;
+	const isOutside = (target) => target === dialog || target.tagName === 'FIGURE';
+
 	function step(delta) {
 		index = (index + delta + items.length) % items.length;
 	}
@@ -26,7 +31,8 @@
 <dialog
 	bind:this={dialog}
 	onclose={() => (index = null)}
-	onclick={(e) => e.target === dialog && (index = null)}
+	onpointerdown={(e) => (pressedOutside = isOutside(e.target))}
+	onclick={(e) => pressedOutside && isOutside(e.target) && (index = null)}
 	aria-label="Image viewer"
 >
 	{#if item}
@@ -45,6 +51,7 @@
 
 <style>
 	dialog {
+		--focus: var(--rose); /* controls sit on the dark backdrop */
 		border: 0;
 		padding: 0;
 		background: transparent;

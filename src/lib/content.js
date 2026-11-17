@@ -155,16 +155,22 @@ export const creative = {
 export const hobbies =
 	'When I’m not at a keyboard I’m usually outdoors in northern Finland: hiking, fishing and ice fishing, skiing, or training my puppy Nano. Some of my photography and digital art is below.';
 
+// w and h are the image's pixel size, so the browser reserves its space before it loads.
 export const gallery = [
-	{ src: 'Glitch_effect3.jpg', title: 'Glitch effect with Photoshop', alt: 'Portrait with a glitch effect' },
-	{ src: 'Cut.jpg', title: 'Cut-in-pieces portrait effect with Photoshop', alt: 'Portrait cut into strips' },
-	{ src: 'Winter-wonderland.jpg', title: 'Winter portrait effect with Photoshop', alt: 'Wintery portrait edit' },
-	{ src: 'Figure.jpg', title: 'Portrait effect with Photoshop', alt: 'Stylised profile portrait' },
-	{ src: 'Niko_dust.jpg', title: 'Becoming-dust portrait effect with Photoshop', alt: 'Portrait dissolving into dust' },
-	{ src: 'Winter.jpg', title: 'Sunrise landscape photo', alt: 'Winter sunrise landscape' },
-	{ src: 'Lady_with_rose.jpg', title: 'Lady with a rose, digital drawing', alt: 'Digital drawing of a lady with a rose' },
-	{ src: 'Fish.jpg', title: 'Catching a fish', alt: 'Holding a freshly caught fish' },
-	{ src: 'gallery6.jpg', title: 'Sundown at Ruka ski centre, Kuusamo', alt: 'Sundown over Ruka fells' },
-	{ src: 'gallery4.jpg', title: 'Lake view from Kitka, Kuusamo', alt: 'Lake Kitka view' },
-	{ src: '3droom.jpg', title: '3D room made with Blender', alt: '3D rendered room' }
+	{ src: 'Glitch_effect3.jpg', w: 2000, h: 1333, title: 'Glitch effect with Photoshop', alt: 'Portrait with a glitch effect' },
+	{ src: 'Cut.jpg', w: 1502, h: 2000, title: 'Cut-in-pieces portrait effect with Photoshop', alt: 'Portrait cut into strips' },
+	{ src: 'Winter-wonderland.jpg', w: 1920, h: 1080, title: 'Winter portrait effect with Photoshop', alt: 'Wintery portrait edit' },
+	{ src: 'being-present.webp', w: 1920, h: 1080, title: 'Being present, digital drawing', alt: 'Digital drawing of two women in profile, back to back, eyes closed, on a pastel background' },
+	{ src: 'Figure.jpg', w: 2400, h: 2400, title: 'Portrait effect with Photoshop', alt: 'Stylised profile portrait' },
+	{ src: 'Niko_dust.jpg', w: 1800, h: 1200, title: 'Becoming-dust portrait effect with Photoshop', alt: 'Portrait dissolving into dust' },
+	{ src: 'riisitunturi-winter.jpg', w: 2000, h: 1318, title: 'Snowy winter in Riisitunturi', alt: 'Snow-crowned trees on a fell top under a blue sky, Riisitunturi' },
+	{ src: 'Winter.jpg', w: 2000, h: 1328, title: 'Sunrise landscape photo', alt: 'Winter sunrise landscape' },
+	{ src: 'Lady_with_rose.jpg', w: 1229, h: 1735, title: 'Lady with a rose, digital drawing', alt: 'Digital drawing of a lady with a rose' },
+	{ src: 'hair-buns.jpg', w: 1920, h: 1080, title: 'Girl with hair buns, digital drawing', alt: 'Digital drawing of a girl from behind with braided hair and two buns' },
+	{ src: 'grim-reaper.jpg', w: 900, h: 1125, title: 'Grim Reaper, pencil drawing', alt: 'Pencil drawing of the Grim Reaper holding a scythe, in a sketchbook' },
+	{ src: 'Fish.jpg', w: 2000, h: 1125, title: 'Catching a fish', alt: 'Holding a freshly caught fish' },
+	{ src: 'cherry-tree-london.jpg', w: 2000, h: 1333, title: 'Cherry tree in London', alt: 'Close-up of pink cherry blossoms on a branch' },
+	{ src: 'gallery6.jpg', w: 1920, h: 960, title: 'Sundown at Ruka ski centre, Kuusamo', alt: 'Sundown over Ruka fells' },
+	{ src: 'gallery4.jpg', w: 1920, h: 960, title: 'Lake view from Kitka, Kuusamo', alt: 'Lake Kitka view' },
+	{ src: '3droom.jpg', w: 960, h: 533, title: '3D room made with Blender', alt: '3D rendered room' }
 ];
